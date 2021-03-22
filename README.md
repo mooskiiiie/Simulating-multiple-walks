@@ -30,3 +30,7 @@ Basically, you want to know about the end points of all the random walks you've 
 -To make sure we've got enough simulations, go crazy. Simulate the random walk 500 times.
 -From np_aw_t, select the last row. This contains the endpoint of all 500 random walks you've simulated. Store this Numpy array as ends.
 -Use plt.hist() to build a histogram of ends. Don't forget plt.show() to display the plot.
+
+
+## To get the probability of reaching 60 steps high:
+Get the number of integers in the last index of "ends" that are greater or equal to 60 and divide it to 500 (number of walks taken)
